@@ -1,0 +1,52 @@
+# Write your name and UID here.
+#
+reviewer:
+  name: Lan Xue
+  uid: u7078355
+
+# Write the name of the author of the code here.
+#
+author:
+  name: Anbang Li
+  uid: u6744849
+
+# Write the class or method being reviewed here.
+#
+component:
+  Task 6 in Metro class (line125 to 224)
+  Task 9 in Metro class (line285 to line301)
+
+# Write a list of review comments here.
+#
+comments:
+  - Nice work on testing whether the given sequence is valid or not. I really like your idea about the task.
+    In my opinion, you just imagine that you are placing the tile in order based on the given sequence. During the
+    process of the placement, you checked whether the placement will be valid based on the game rules.
+    1. My favorite parts as follows
+      a. Well-ducumented code; properly name variables and methods.
+      b. Hashmap for recording the all initial positions in the board and updated it everytime after placing the
+         tile, it is really good for checking whether there is a overlaped tile.
+      c. A list for side positions to check whether there are only side positions left, since there are so many special
+         case needed to be considered.
+    2. Something I think can be improved
+      a. The given string sequence can represent the state of the board, which may can be included in the 'Board' class.
+         Then you can implement some methods to operate on the board object, such as checking the unused position.
+      b. Instead of using a Hashmap to record and check unused position, maybe you can try 'boolean[][]'
+      c. There are a lot of if-else statment to chech the special cases when it comes to the placement next to the
+         side or corner. I am wondering wether there is a better way to realize it, maybe we can figure it out later.
+    Overall, a great job here. Well done!
+
+  - Brief and well-structured code for task9. The idea for generating a valid move is very clear and persuasive.
+    1. Something I like
+      a. Well-ducumented code; properly name variables and methods.
+      b. The logic of the method to solve task9 is very clear. Each time when the robot is going to make placement,
+         you will find a valid position by go through all the positions on the borad and choose an appropriate position.
+    2. Something I thinks can be improved
+      a. Based on the current code, the position each time it will choose will be the first valid position when going
+         through all the positions from the row0, column0. It would be better if it can choose a position randomly.
+      b. It we can record the positions that have already been used, then next time we can only pick a position from the
+        remaining positions. Maybe it will help improve the efficiency of the method.
+    Overall, the task has been finised successfully. The only thing we need to consider is to make it more faster.
+
+  - Thanks for your effort on this assignment. In the following two weeks, we need to figure out how to make better
+    use of OOP in our work. Let's work on it together.

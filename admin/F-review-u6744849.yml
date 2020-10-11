@@ -1,0 +1,33 @@
+# Write your name and UID here.
+#
+reviewer:
+  name: Anbang Li
+  uid: u6744849
+
+# Write the name of the author of the code here.
+#
+author:
+  name: Lan Xue
+  uid: u7078355
+
+# Write the class or method being reviewed here.
+#
+component:
+  GridBackGround in Board Class (line332 to line393)
+  HandTileButton and DeckTileButton in Board Class (line557 to line619)
+
+# Write a list of review comments here.
+#
+comments:
+- Generally great design of code. Lan created 2 buttons to implement the idea of drawing card from the deck, and choose card from hand. By making the two buttons classes,
+  Lan put the logics of drawing and choosing cards in each of the button, and this harnesses the object orientation feature of JAVA to avoid making a single method too
+  chunky and hard to read. With a makePlayerControls method that generates these two buttons, the main method could just call the makePlayerControls method to get everything
+  on display. The GridBackGround method helps to get the cilcks on board to become an action which puts the tile in right position. With the two buttons providing boolean
+  state of whether it is clicked, the GridBackGround method puts the tile accordingly on right position. 
+  
+- These two parts of code mainly creates button inner classes that contain main logic of the buttons. It is good use of object-orientation concept. But this can also be implemented
+  by creating several methods that generate these buttons. 
+  
+- The code is well documented, logics of code are listed clearly. 
+
+- The code also follows JAVA coding convention.
